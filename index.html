@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tran Thien Nhan - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="cover cover-left"></div>
+        <div class="cover cover-right"></div>
+
+        <div class="book">
+            <!-- Profile Page (Cover Left) -->
+             <div class="book-page page-left">
+                <div class="profile-page">
+                    <!-- Ảnh đại diện -->
+                    <img src="photo.jpg" alt="Avatar">
+                    <h1>Tran Thien Nhan</h1>
+                    <h3>Frontend Developer Intern</h3>
+                    
+                    <div class="social-media">
+                        <!-- Giữ lại 2 icon đầu và xóa Mail, Facebook -->
+                        <a href="https://www.linkedin.com/in/tranthiennhan" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="https://github.com/ThienNhan246" target="_blank"><i class='bx bxl-github' ></i></a>
+                    </div>
+
+                    <p>I am a Software Engineering student at FPT University, with previous work experience skills in C, Java, Web Development, and UI/UX in real-world E-commerce projects.</p>
+
+                    <div class="btn-box">
+                        <a href="#" class="btn">Download CV</a>
+                        <a href="#" class="btn contact-me">Contact Me</a>
+                    </div>
+                </div>
+             </div>
+             
+            <!-- SHEET 1 -->
+            <div class="book-page page-right" id="turn-1">
+                <!-- Page 1: SKILLS -->
+                <div class="page-front">
+                    <h1 class="title">Technical Skills</h1>
+                    
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <h3>Frontend & Languages</h3>
+                            <div class="content">
+                                <span><i class='bx bxl-html5'></i> HTML5/CSS3</span>
+                                <span><i class='bx bxl-javascript'></i> JavaScript (ES6+)</span>
+                                <span><i class='bx bxl-bootstrap'></i> Bootstrap</span>
+                                <span><i class='bx bxl-jquery'></i> jQuery</span>
+                                <span><i class='bx bx-wind'></i> GSAP</span>
+                            </div>
+                        </div>
+
+                        <div class="skills-content">
+                            <h3>Backend & Database</h3>
+                            <div class="content">
+                                <span><i class='bx bxl-java'></i> Java (Core/EE)</span>
+                                <span><i class='bx bxs-data'></i> JSP/Servlet</span>
+                                <span><i class='bx bxs-data'></i> SQL Server</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skills-content">
+                            <h3>Tools</h3>
+                            <div class="content">
+                                <span><i class='bx bxl-git'></i> Git/GitHub</span>
+                                <span><i class='bx bx-code-alt'></i> NetBeans/VS Code</span>
+                                <span><i class='bx bxl-figma'></i> Figma</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <span class="number-page">1</span>
+                    <span class="nextprev-btn" data-page="turn-1">
+                        <i class='bx bx-chevron-right'></i>
+                    </span>
+                </div>
+
+                <!-- Page 2: MAPEV PROJECT -->
+                <div class="page-back">
+                    <h1 class="title">Project</h1>
+                    
+                    <div class="workeduc-box">
+                        <div class="workeduc-content">
+                            <h3>EV Charging Station Management System</h3>
+                            
+                            <p style="font-size: 0.95rem; margin-top: 5px;">
+                                <b>Goal:</b> A platform for finding and booking EV charging stations with comprehensive system management.
+                            </p>
+
+                            <div style="font-size: 0.95rem; margin-top: 10px; line-height: 1.5;">
+                                <b>Key Features:</b>
+                                <ul style="padding-left: 1.2rem; margin-top: 5px;">
+                                    <li><b>Interactive Map:</b> Visualizes station locations with filtering by distance and port type (Google Maps API).</li>
+                                    <li><b>Scheduling & Booking:</b> Manages charging slots and transaction history.</li>
+                                    <li><b>Admin Dashboard:</b> Handles station CRUD operations, user management, and reporting.</li>
+                                </ul>
+                                
+                                <div style="margin-top: 10px;">
+                                    <b>Tech Stack:</b> Java (NetBeans), MySQL, JSP/Servlet, Google Maps API, Ant, Git.
+                                </div>
+                                
+                                <div style="margin-top: 10px;">
+                                    <b>Contributions:</b> Designed database schema, developed search/filter APIs, integrated map interface, and implemented booking logic.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <span class="number-page">2</span>
+                    <span class="nextprev-btn back" data-page="turn-1">
+                        <i class='bx bx-chevron-left' ></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- SHEET 2 -->
+            <div class="book-page page-right" id="turn-2">
+                <!-- Page 3: 3D PORTFOLIO PROJECT -->
+                <div class="page-front">
+                    <div style="margin-top: 2rem;"></div> 
+                    
+                    <div class="workeduc-box">
+                        <div class="workeduc-content">
+                            <!-- Đã sửa nội dung theo yêu cầu -->
+                            <h3>Portfolio Website</h3>
+                            
+                            <p style="font-size: 0.95rem; margin-top: 5px;">
+                                <b>Role:</b> Frontend Developer
+                            </p>
+
+                            <div style="font-size: 0.95rem; margin-top: 10px; line-height: 1.5;">
+                                <b>Overview:</b>
+                                <ul style="padding-left: 1.2rem; margin-top: 5px;">
+                                    <li>Designed a custom 3D book interface using <b>pure CSS and JavaScript</b>.</li>
+                                    <li>Kept the site lightweight and fast by avoiding heavy external libraries.</li>
+                                    <li>Solved logic challenges to make page turning smooth and realistic.</li>
+                                </ul>
+
+                                <div style="margin-top: 10px;">
+                                    <b>Key Results:</b>
+                                    <ul style="padding-left: 1.2rem; margin-top: 5px;">
+                                        <li>Responsive on both mobile and desktop.</li>
+                                        <li>Clean and organized code structure.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <span class="number-page">3</span>
+                    <span class="nextprev-btn" data-page="turn-2">
+                        <i class='bx bx-chevron-right'></i>
+                    </span>
+                </div>
+
+                <!-- Page 4: EDUCATION -->
+                <div class="page-back">
+                    <h1 class="title">Education & Awards</h1>
+                    
+                    <div class="workeduc-box">
+                        <!-- Education Section -->
+                        <div class="workeduc-content">
+                            <span class="year"><i class='bx bxs-graduation'></i> Education</span>
+                            <h3>FPT University HCMC | Sep 2023 – Apr 2027 (Expected)</h3>
+                            <p><b>Major:</b> Software Engineering<br>
+                        </div>
+
+                        <!-- Awards/Certifications Section -->
+                        <div class="workeduc-content">
+                            <span class="year"><i class='bx bxs-award'></i> Achievements</span>
+                            
+                            <p>- Scholarship: FPTU1000 (Top entrance scorer)</p>
+                            <p>- IELTS 6.0 (Professional Proficiency)</p>
+                            <p>- CCNA: Introduction to Networks (CISCO)</p>
+                        </div>
+                    </div>
+
+                    <span class="number-page">4</span>
+                    <span class="nextprev-btn back" data-page="turn-2">
+                        <i class='bx bx-chevron-left' ></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- SHEET 3 -->
+            <div class="book-page page-right" id="turn-3">
+                <!-- Page 5: THANK YOU -->
+                <div class="page-front">
+                    <h1 class="title">Thanks for reading!</h1>
+                    
+                    <div class="thankyou-box">
+                        <i class='bx bxs-heart'></i>
+                        <p>I am looking forward to working with you at ECE Technology. <br>Please feel free to connect with me:</p>
+                        
+                        <!-- Căn thẳng hàng icon và link -->
+                        <div class="social-links" style="margin: 20px auto; display: flex; flex-direction: column; gap: 10px; width: fit-content;">
+                            <a href="https://www.linkedin.com/in/tranthiennhan" target="_blank" style="color: var(--main-color); font-weight: 500; font-size: 1.1rem; display: flex; align-items: center; gap: 12px;">
+                                <i class='bx bxl-linkedin-square' style="font-size: 1.4rem;"></i> linkedin.com/in/tranthiennhan
+                            </a>
+                            <a href="https://github.com/ThienNhan246" target="_blank" style="color: var(--main-color); font-weight: 500; font-size: 1.1rem; display: flex; align-items: center; gap: 12px;">
+                                <i class='bx bxl-github' style="font-size: 1.4rem;"></i> github.com/ThienNhan246
+                            </a>
+                        </div>
+                        
+                        <div class="btn-box">
+                            <a href="#" class="btn back-profile">Back to Profile</a>
+                        </div>
+                    </div>
+
+                    <span class="number-page">5</span>
+                </div>
+
+                <!-- Page 6: Back Cover (Empty) -->
+                <div class="page-back">
+                    <div class="back-cover-content"></div>
+                    <span class="nextprev-btn back" data-page="turn-3">
+                        <i class='bx bx-chevron-left' ></i>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
