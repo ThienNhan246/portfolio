@@ -29,7 +29,7 @@ body {
     min-height: 100vh;
     background: var(--bg-color);
     color: var(--text-color);
-    overflow: hidden;
+    overflow: hidden; /* Mặc định ẩn thanh cuộn cho PC */
 }
 
 .wrapper {
@@ -371,4 +371,128 @@ body {
 
 .back-profile {
     width: 10rem; 
+}
+
+/* ================================================== */
+/* MEDIA QUERIES FOR RESPONSIVE DESIGN (MOBILE/TABLET) */
+/* ================================================== */
+
+@media (max-width: 991px) {
+    /* Cho phép cuộn trang trên mobile */
+    body {
+        overflow-y: auto;
+        padding: 2rem 0;
+        align-items: flex-start;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    /* Reset Wrapper: Bỏ 3D, full width */
+    .wrapper {
+        width: 100%;
+        max-width: 600px; /* Giới hạn chiều rộng thẻ trên tablet */
+        height: auto;
+        perspective: none;
+        animation: none;
+        transform: none !important;
+        opacity: 1;
+        padding: 1rem;
+    }
+
+    /* Reset Book: Bỏ flex row, chuyển sang column */
+    .book {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        height: auto;
+    }
+
+    /* Ẩn bìa sách đi vì không còn hiệu ứng lật */
+    .cover {
+        display: none;
+    }
+
+    /* Reset từng trang: Biến thành các thẻ Card xếp dọc */
+    .book .book-page {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+        border-radius: 1rem;
+        background: #fff;
+        border: var(--border);
+        /* Ghi đè các hiệu ứng JS */
+        transform: none !important; 
+        z-index: auto !important;
+        left: auto;
+        right: auto;
+        top: auto;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    /* Trang Profile (Page Left) */
+    .book-page.page-left {
+        padding: 2rem;
+        margin-bottom: 0; /* Đã có gap ở .book */
+    }
+
+    /* Trang nội dung (Page Right) */
+    .book-page.page-right {
+        /* Đảm bảo hiển thị cả mặt trước và mặt sau */
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Mặt trước và mặt sau của trang */
+    .book-page .page-front,
+    .book-page .page-back {
+        position: relative;
+        width: 100%;
+        height: auto;
+        transform: none !important; /* Bỏ lật 180 độ */
+        top: auto;
+        left: auto;
+        padding: 2rem;
+        border-bottom: 1px solid #eee;
+    }
+    
+    /* Ẩn đường viền dưới của phần tử cuối cùng trong card */
+    .book-page .page-back {
+        border-bottom: none;
+    }
+
+    /* Ẩn nút điều hướng và số trang vì giờ là lướt dọc */
+    .nextprev-btn, 
+    .number-page {
+        display: none;
+    }
+
+    /* Chỉnh sửa hiển thị nội dung cho gọn trên mobile */
+    .profile-page h1 {
+        font-size: 2rem;
+    }
+
+    .profile-page img {
+        max-width: 140px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+    
+    .thankyou-box i {
+        font-size: 4rem;
+    }
+
+    /* Nút back-profile ẩn đi vì không cần quay lại */
+    .back-profile {
+        display: none;
+    }
+    
+    .btn {
+        margin: 0.5rem;
+    }
 }
